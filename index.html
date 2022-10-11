@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="exercicio01.js"></script>
+    <script src="exercicio02.js"></script>
     <title>Document</title>
 </head>
 
@@ -19,22 +21,33 @@
         <h1 class="cabecalho__titulo">Treinando JS</h1>
     </header>
     <main class="principal">
+
+
         <div class="card-exercicio">
             <div class="card-exercicio__entrada">
-                <input placeholder="Número" type="text" name="" id="">
-                <input placeholder="Número" type="text" name="" id="">
-                <button>Somar</button>
+                <input placeholder="Número" type="text" name="" id="ex_01_numero1">
+                <input placeholder="Número" type="text" name="" id="ex_01_numero2">
+                <button onclick="dispararExercicio01()">Somar</button>
             </div>
             <div class="card-exercicio__saida">
                 <span class="saida__label">Resultado:</span>
-                <span class="saida__resultado">
-                    <span>0</span>
+                <span id="ex_01_resultado" class="saida__resultado">
+                    0
                 </span>
             </div>
         </div>
+
         <div class="card-exercicio">
-            Card de Exercício
+            <div class="card-exercicio__entrada">
+                <input placeholder="ID Pokemon" type="text" name="" id="idPokemon">
+                <button onclick="dispararExercicio02()">Buscar</button>
+            </div>
+            <div class="card-exercicio__saida">
+                <span class="saida__label">Resultado:</span>
+                <img id="imagemPokemon" src="" alt="">
+            </div>
         </div>
+
     </main>
     <footer class="rodape">
         <span class="rodape__item">Criado por:</span>

@@ -39,13 +39,14 @@ body {
     grid-area: cabecalho;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
 
 .principal {
     background-color: var(--verde);
-    padding: 15px 35%;
+    padding: 15px 5%;
 
     grid-area: principal;
 
@@ -73,8 +74,8 @@ body {
     text-decoration: none;
     color: white;
     background-color: var(--cinza-escuro);
-    padding: 3px;
-    border-radius: 2px;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .cabecalho__titulo {
@@ -131,9 +132,10 @@ body {
 
 .card-exercicio__saida {
     border: solid var(--cinza-escuro) 2px;
-    background-color: var(--cinza-escuro);
+    background-color: var(--cinza-claro);
     width: 0px;
     flex-grow: 1;
+    padding: 10px;
 
     display: flex;
     flex-direction: column;
@@ -153,5 +155,4 @@ body {
     
     display: flex;
     align-items: center;
-
 }
