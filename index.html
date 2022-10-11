@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    Inicio Github
+    <!-- BEM - Block Element Modifier -->
+    <header class="cabecalho">
+        <nav class="menu-cabecalho">
+            <a class="menu-cabecalho__item">Principal</a>
+            <a class="menu-cabecalho__item" href="">Contato</a>
+        </nav>
+        <h1 class="cabecalho__titulo">Treinando JS</h1>
+    </header>
+    <main class="principal">
+        <div class="card-exercicio">
+            <div class="card-exercicio__entrada">
+                <input placeholder="Número" type="text" name="" id="">
+                <input placeholder="Número" type="text" name="" id="">
+                <button>Somar</button>
+            </div>
+            <div class="card-exercicio__saida">
+                <span class="saida__label">Resultado:</span>
+                <span class="saida__resultado">
+                    <span>0</span>
+                </span>
+            </div>
+        </div>
+        <div class="card-exercicio">
+            Card de Exercício
+        </div>
+    </main>
+    <footer class="rodape">
+        <span class="rodape__item">Criado por:</span>
+        <span class="rodape__item">Target Trust</span>
+    </footer>
 </body>
+
 </html>
+
+<!-- 21:01 -->

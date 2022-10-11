@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --amarelo: #FCE6A8;
+    --verde: #8FBCB3;
+    --cinza-escuro: #788895;
+    --cinza-claro: #DFE6ED;
+}
+
+/* LAYOUT */
+body {
+    background-color: var(--amarelo);
+    padding: 5px;
+
+    height: 100vh;
+
+    display: grid;
+    gap: 4px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+
+    grid-template-areas: 
+    "cabecalho"
+    "principal"
+    "rodape";
+}
+
+.cabecalho {
+    background-color: var(--verde);
+    padding: 15px;
+
+    grid-area: cabecalho;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    background-color: var(--verde);
+    padding: 15px 35%;
+
+    grid-area: principal;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    background-color: var(--verde);
+
+    grid-area: rodape;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTEXTO e COMPONENTES */
+.menu-cabecalho__item {
+    text-decoration: none;
+    color: white;
+    background-color: var(--cinza-escuro);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.cabecalho__titulo {
+    flex-grow: 1;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.menu-cabecalho {
+    display: flex;
+    gap: 3px;
+}
+
+.card-exercicio {
+    background-color: var(--cinza-claro);
+    padding: 20px;
+
+    /* flex-grow: 1; */
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+
+.card-exercicio__entrada {
+    width: 0px;
+    flex-basis: 0px;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+}
+
+.card-exercicio__entrada input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.card-exercicio__entrada button {
+    width: 100%;
+    padding: 10px;
+
+    background-color: var(--cinza-escuro);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.card-exercicio__saida {
+    border: solid var(--cinza-escuro) 2px;
+    background-color: var(--cinza-escuro);
+    width: 0px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.saida__label {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.saida__resultado {
+    font-weight: 700;
+    font-size: 50px;
+
+    flex-grow: 1;
+    align-self: center;
+    
+    display: flex;
+    align-items: center;
+
+}
